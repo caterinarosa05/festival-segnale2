@@ -24,10 +24,65 @@
     <h1>Info e luoghi</h1>
   </section>
 
-  <section class="content-section">
-    <!-- Qui aggiungerai i contenuti della pagina nei prossimi passaggi. -->
-  </section>
+  <section class="content-section" aria-labelledby="titolo-galleria">
+  <h2 id="titolo-galleria">I luoghi del festival</h2>
+
+  <div class="swiper">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide">
+        <img src="assets/luoghi/mirafiori.jpg"
+             alt="Fotografia della sede di Mirafiori">
+        <h3>Mirafiori</h3>
+        <p>Uno dei luoghi che ospita il festival Segnale.</p>
+      </div>
+
+      <div class="swiper-slide">
+        <img src="assets/luoghi/politecnico-valentino.jpg"
+             alt="Fotografia della sede del Politecnico Valentino">
+        <h3>Politecnico Valentino</h3>
+        <p>Uno dei luoghi che ospita il festival Segnale.</p>
+      </div>
+
+      <div class="swiper-slide">
+        <img src="assets/luoghi/sede-centrale.jpg"
+             alt="Fotografia della sede centrale">
+        <h3>Sede centrale</h3>
+        <p>Uno dei luoghi che ospita il festival Segnale.</p>
+      </div>
+
+        </div>
+
+    <button class="swiper-button-prev" type="button"
+            aria-label="Fotografia precedente"></button>
+    <button class="swiper-button-next" type="button"
+            aria-label="Fotografia successiva"></button>
+   </div>
+</section>
+
+<section class="content-section" aria-labelledby="titolo-come-arrivare">
+  <h2 id="titolo-come-arrivare">Come arrivare</h2>
+
+  <iframe id="mappa-sedi"
+    title="Mappa delle tre sedi di riferimento per il festival Segnale a Torino"
+    src="https://umap.openstreetmap.fr/it/map/segnale-sedi-del-festival-immaginario_1479665?scaleControl=false&amp;miniMapControl=false&amp;scrollWheelZoom=false&amp;zoomControl=true&amp;editMode=disabled&amp;moreControl=true&amp;searchControl=null&amp;tilelayersControl=null&amp;embedControl=null&amp;datalayersControl=true&amp;onLoadPanel=none&amp;captionBar=false&amp;captionMenus=true#12/45.0465/7.6528"></iframe>
+</section>
+
 </main>
+<footer class="site-footer">
+    <div class="container">
+      <p>Segnale · Progetto didattico · Festival immaginario</p>
+    </div>
+  </footer>
 <script src="https://cdn.jsdelivr.net/npm/swiper@14.4.0/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper('.swiper', {
+    slidesPerView: 1,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    }
+  });
+</script>
 </body> 
 </html>
